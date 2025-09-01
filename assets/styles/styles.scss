@@ -1,0 +1,32 @@
+/* || Fonts ('Josefin Sans')
+ *************************/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+/* || Global Variables
+ *************************/
+ /* || Colors
+ *************************/
+$white : #FFFFFF;
+$black: #000000;
+
+$gray-900: #423A3A;
+$red-400: #F96464;
+$pink-400: #CE9898;
+
+ /* || Gradients
+ *************************/
+$gradient-1: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+$gradient-2: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
+$gradient-3: linear-gradient(221.42deg, #FFF1F1 0, #FFFFFF 96.36%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $white;
+    font-family: "Josefin Sans", sans-serif;
+}
