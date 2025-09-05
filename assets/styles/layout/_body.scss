@@ -1,0 +1,245 @@
+/* || Body Element
+ *************************/
+body {
+    background: $gradient-2;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+/* || Main Element
+ *************************/
+main {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+}
+
+.coming-soon {
+    &__hero-img {
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+        height: 250px;
+
+        position: absolute;
+        top: 83.94px;
+        left: 0;
+    }
+
+    &__details {
+        margin: 397.94px 0 92.06px;
+        padding: 0 31.75px;
+        max-width: 445px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__bg-illustration {
+        display: none;
+    }
+
+    &__header {
+        position: absolute;
+        top: 32px;
+        left: 32px;
+    }
+
+    &__logo {
+        width: 100.78px;
+    }
+
+    &__title {
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 1;
+        letter-spacing: 10px;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: $pink-400;
+
+        span {
+            font-weight: 600;
+            color: $gray-100;
+        }
+    }
+
+    &__caption {
+        margin-top: 16px;
+        width: 100%;
+
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.572;
+
+        text-align: center;
+
+        color: $pink-400;
+    }
+
+    &__form {
+        margin-top: 32px;
+        width: 100%;
+
+        position: relative;
+    }
+
+    &__input {
+        padding: 8px 24px;
+        border: 1px solid $pink-400;
+        width: 100%;
+        height: 48px;
+
+        border-radius: 28px;
+        background: transparent;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 2.125;
+
+        &::placeholder {
+            color: $pink-400;
+
+            mix-blend-mode: normal;
+            opacity: 0.5;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__btn {
+        padding: 16px 24px;
+        border: none;
+        width: 64px;
+        height: 48px;
+        border-radius: 28px;
+
+        background: $gradient-1;
+        box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+/* || Media Queries
+ *************************/
+@media (min-width: 768px) {
+    .coming-soon {
+        &__hero-img {
+            height: 400px;
+            object-position: 0 -80px;
+        }
+
+        &__details {
+            margin: 547.94px 0 62.06px;
+            padding: 0;
+        }
+
+        &__header {
+            left: 80px;
+        }
+
+        &__title {
+            font-size: 64px;
+            letter-spacing: 17.5px;
+        }
+
+        &__caption {
+            margin-top: 32px;
+            height: 102px;
+
+            font-size: 16px;
+            line-height: 2.125;
+        }
+
+        &__input {
+            height: 56px;
+        }
+
+        &__btn {
+            width: 100px;
+            height: 56px;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    main {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .coming-soon {
+        &__hero-img {
+            min-width: 610px;
+            min-height: 100vh;
+            height: 100%;
+
+            position: unset;
+            object-position: top;
+        }
+
+        &__details {
+            margin: unset;  
+            padding: 0 220px 0 165px;
+            width: 100%;
+            max-width: unset;
+
+            align-items: flex-start;
+            position: relative;
+        }
+
+        &__details > * {
+            max-width: 445px;
+        }
+
+        &__bg-illustration {
+            width: 100%;
+            min-height: 100vh;
+            height: 100%;
+
+            object-fit: cover;
+
+            display: unset;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        &__header {
+            position: unset;
+        }
+
+        &__logo {
+            margin-top: 80px;
+            width: 157.59px;
+        }
+
+        &__title {
+            margin-top: 136px;
+            text-align: left;
+        }
+
+        &__caption {
+            text-align: left;
+        }
+    }
+}
