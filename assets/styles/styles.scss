@@ -17,6 +17,10 @@ main {
     position: relative;
 }
 
+.comming-soon__bg-illustration {
+    display: none;
+}
+
 .coming-soon__hero-img {
     width: 100%;
     object-fit: cover;
@@ -45,7 +49,7 @@ main {
 }
 
 .coming-soon__logo {
-    height: 19.94px;
+    width: 100.78px;
 }
 
 .coming-soon__title {
@@ -169,5 +173,74 @@ main {
     .coming-soon__btn {
         width: 100px;
         height: 56px;
+    }
+}
+
+@media (min-width: 1440px) {
+    main {
+        // padding-left: 165px;
+
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        // gap: 220px;
+    }
+
+    .comming-soon__bg-illustration {
+        width: 100%;
+        min-height: 100vh;
+        height: 100%;
+
+        object-fit: cover;
+
+        display: unset;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        pointer-events: none;
+        z-index: -1;
+    }
+
+    .coming-soon__hero-img {
+        min-width: 610px;
+        min-height: 100vh;
+        height: 100%;
+
+        position: unset;
+        object-position: top;
+        // object-fit: unset;
+    }
+
+    .coming-soon__details {
+        margin: unset;  
+        padding: 0 220px 0 165px;
+        width: 100%;
+        max-width: unset;
+
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .coming-soon__details > * {
+        max-width: 445px;
+    }
+
+    .coming-soon__header {
+        position: unset;
+    }
+
+    .coming-soon__title {
+        margin-top: 136px;
+        text-align: left;
+    }
+    
+    .coming-soon__caption {
+        text-align: left;
+    }
+
+    .coming-soon__logo {
+        margin-top: 80px;
+        width: 157.59px;
     }
 }
