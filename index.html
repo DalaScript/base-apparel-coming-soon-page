@@ -16,7 +16,7 @@
 <body>
   <main class="coming-soon">
     <picture class="coming-soon__hero">
-      <source media="(min-width: 1440px)" srcset="./assets/images/hero-desktop.jpg">
+      <source media="(min-width: 768px)" srcset="./assets/images/hero-desktop.jpg">
       <img class="coming-soon__hero-img" src="./assets/images/hero-mobile.jpg" alt="Fashion model">
     </picture>
     <section class="coming-soon__details">
@@ -32,16 +32,8 @@
       </p>
       <form class="coming-soon__form">
         <label class="sr-only" for="email">Email Address</label>
-        <input 
-          class="coming-soon__input" 
-          id="email" 
-          type="email" 
-          name="email" 
-          autocomplete="email" 
-          placeholder="Email Address"
-          aria-describedby="email-error"
-          required
-        >
+        <input class="coming-soon__input" id="email" type="email" name="email" autocomplete="email"
+          placeholder="Email Address" aria-describedby="email-error" required>
         <button class="coming-soon__btn" type="submit" aria-label="Submit email">
           <img class="coming-soon__btn-icon" src="./assets/images/icon-arrow.svg" alt="" aria-hidden="true">
         </button>

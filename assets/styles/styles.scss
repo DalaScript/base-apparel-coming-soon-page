@@ -9,8 +9,10 @@ body {
 }
 
 main {
-    padding: 32px 0 92.06px;
     min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
 
     position: relative;
 }
@@ -27,7 +29,9 @@ main {
 }
 
 .coming-soon__details {
+    margin: 397.94px 0 92.06px;
     padding: 0 31.75px;
+    max-width: 445px;
 
     display: flex;
     flex-direction: column;
@@ -35,13 +39,12 @@ main {
 }
 
 .coming-soon__header {
-    margin-bottom: 346px;
-    padding-left: 0.5px;
-    align-self: flex-start;
+    position: absolute;
+    top: 32px;
+    left: 32px;
 }
 
 .coming-soon__logo {
-    width: 100.78px;
     height: 19.94px;
 }
 
@@ -49,7 +52,7 @@ main {
     font-family: 'Josefin Sans';
     font-weight: 300;
     font-size: 40px;
-    line-height: 100%;
+    line-height: 1;
 
     text-align: center;
     letter-spacing: 10px;
@@ -59,25 +62,19 @@ main {
 
     span {
         font-weight: 600;
-        font-size: 40px;
-        line-height: 100%;
-        text-align: center;
-        letter-spacing: 10px;
-
         color: $gray-100;
     }
 }
 
 .coming-soon__caption {
     margin-top: 16px;
-    width: 311.5px;
-    height: 88px;
+    width: 100%;
 
     font-family: 'Josefin Sans';
     font-weight: 400;
     font-size: 14px;
-    line-height: 155%;
-    
+    line-height: 1.572;
+
     text-align: center;
 
     color: $pink-400;
@@ -102,7 +99,7 @@ main {
     font-family: 'Josefin Sans';
     font-weight: 400;
     font-size: 16px;
-    line-height: 215%;
+    line-height: 2.125;
 }
 
 .coming-soon__input::placeholder {
@@ -117,6 +114,7 @@ main {
 }
 
 .coming-soon__btn {
+    padding: 16px 24px;
     width: 64px;
     height: 48px;
     border: none;
@@ -129,10 +127,47 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 16px 24px;
     gap: 8px;
 
     position: absolute;
     top: 0;
     right: 0;
+}
+
+@media (min-width: 768px) {
+    .coming-soon__hero-img {
+        height: 400px;
+        object-position: 0 -80px;
+    }
+
+    .coming-soon__header {
+        left: 80px;
+    }
+
+    .coming-soon__details {
+        margin: 547.94px 0 62.06px;
+        padding: 0;
+    }
+
+    .coming-soon__input {
+        height: 56px;
+    }
+
+    .coming-soon__title {
+        font-size: 64px;
+        letter-spacing: 17.5px;
+    }
+
+    .coming-soon__caption {
+        margin-top: 32px;
+        height: 102px;
+
+        font-size: 16px;
+        line-height: 2.125;
+    }
+
+    .coming-soon__btn {
+        width: 100px;
+        height: 56px;
+    }
 }
