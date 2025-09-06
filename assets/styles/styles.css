@@ -198,12 +198,11 @@ main {
     align-items: flex-start;
     position: relative;
   }
-  .coming-soon__details > * {
+  .coming-soon__details > *:not(.coming-soon__bg-illustration) {
     max-width: 445px;
   }
   .coming-soon__bg-illustration {
     width: 100%;
-    min-height: 100vh;
     height: 100%;
     object-fit: cover;
     display: unset;

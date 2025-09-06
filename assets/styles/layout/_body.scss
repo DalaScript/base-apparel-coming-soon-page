@@ -203,13 +203,12 @@ main {
             position: relative;
         }
 
-        &__details > * {
+        &__details > *:not(&__bg-illustration) {
             max-width: 445px;
         }
 
         &__bg-illustration {
             width: 100%;
-            min-height: 100vh;
             height: 100%;
 
             object-fit: cover;
