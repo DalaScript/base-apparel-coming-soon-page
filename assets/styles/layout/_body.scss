@@ -42,14 +42,12 @@ main {
         display: none;
     }
 
-    &__header {
+    &__logo {
+        width: 100.78px;
+
         position: absolute;
         top: 32px;
         left: 32px;
-    }
-
-    &__logo {
-        width: 100.78px;
     }
 
     &__title {
@@ -178,7 +176,7 @@ main {
             padding: 0;
         }
 
-        &__header {
+        &__logo {
             left: 80px;
         }
 
@@ -256,13 +254,11 @@ main {
             z-index: -1;
         }
 
-        &__header {
-            position: unset;
-        }
-
         &__logo {
             margin-top: 80px;
             width: 157.59px;
+
+            position: unset;
         }
 
         &__title {

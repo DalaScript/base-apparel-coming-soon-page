@@ -73,13 +73,11 @@ main {
 .coming-soon__bg-illustration {
   display: none;
 }
-.coming-soon__header {
+.coming-soon__logo {
+  width: 100.78px;
   position: absolute;
   top: 32px;
   left: 32px;
-}
-.coming-soon__logo {
-  width: 100.78px;
 }
 .coming-soon__title {
   font-weight: 300;
@@ -177,7 +175,7 @@ main {
     margin: 547.94px 0 62.06px;
     padding: 0;
   }
-  .coming-soon__header {
+  .coming-soon__logo {
     left: 80px;
   }
   .coming-soon__title {
@@ -236,12 +234,10 @@ main {
     pointer-events: none;
     z-index: -1;
   }
-  .coming-soon__header {
-    position: unset;
-  }
   .coming-soon__logo {
     margin-top: 80px;
     width: 157.59px;
+    position: unset;
   }
   .coming-soon__title {
     margin-top: 136px;

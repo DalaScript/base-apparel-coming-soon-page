@@ -1,6 +1,6 @@
 const emailInput = document.getElementById("email");
 const errorIcon = document.getElementById("error-icon");
-const errorText = document.getElementById("error-text");
+const errorText = document.getElementById("email-error");
 const form = document.querySelector(".coming-soon__form");
 
 form.addEventListener("click", (e) => {
