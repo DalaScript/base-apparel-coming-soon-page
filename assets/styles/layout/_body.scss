@@ -111,6 +111,10 @@ main {
         &:focus {
             outline: none;
         }
+
+        &--error {
+            border-color: $red-400;
+        }
     }
 
     &__btn {
@@ -132,6 +136,31 @@ main {
         position: absolute;
         top: 0;
         right: 0;
+
+        cursor: pointer;
+    }
+
+    &__error-icon {
+        width: 24px;
+        height: 24px;
+
+        position: absolute;
+        top: 50%;
+        right: 70px;
+
+        transform: translateY(-50%);
+    }
+
+    &__error {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 215%;
+
+        color: $red-400;
+
+        position: absolute;
+        left: 32px;
+        bottom: -36px;
     }
 }
 
@@ -173,6 +202,10 @@ main {
         &__btn {
             width: 100px;
             height: 56px;
+        }
+
+        &__error-icon {
+            right: 116px;
         }
     }
 }

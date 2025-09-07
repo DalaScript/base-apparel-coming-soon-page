@@ -11,6 +11,9 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="./assets/styles/styles.css">
+
+  <!-- Scripts -->
+  <script src="./assets/scripts/validation.js" defer></script>
 </head>
 
 <body>
@@ -35,10 +38,11 @@
         <label class="sr-only" for="email">Email Address</label>
         <input class="coming-soon__input" id="email" type="email" name="email" autocomplete="email"
           placeholder="Email Address" aria-describedby="email-error" required>
-        <button class="coming-soon__btn" type="submit" aria-label="Subscribe with your email">
+        <button class="coming-soon__btn" id="submit-btn" type="submit" aria-label="Subscribe with your email">
           <img class="coming-soon__btn-icon" src="./assets/images/icon-arrow.svg" alt="" aria-hidden="true">
         </button>
-        <span class="coming-soon__error" id="email-error" aria-live="polite" hidden>Please provide a valid email</span>
+        <img class="coming-soon__error-icon" id="error-icon" src="./assets/images/icon-error.svg" alt="" aria-hidden="true" hidden>
+        <span class="coming-soon__error" id="error-text" aria-live="polite" hidden>Please provide a valid email</span>
       </form>
     </section>
   </main>

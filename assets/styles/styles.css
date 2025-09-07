@@ -127,6 +127,9 @@ main {
 .coming-soon__input:focus {
   outline: none;
 }
+.coming-soon__input--error {
+  border-color: #F96464;
+}
 .coming-soon__btn {
   padding: 16px 24px;
   border: none;
@@ -143,6 +146,24 @@ main {
   position: absolute;
   top: 0;
   right: 0;
+  cursor: pointer;
+}
+.coming-soon__error-icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  right: 70px;
+  transform: translateY(-50%);
+}
+.coming-soon__error {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 215%;
+  color: #F96464;
+  position: absolute;
+  left: 32px;
+  bottom: -36px;
 }
 
 /* || Media Queries
@@ -175,6 +196,9 @@ main {
   .coming-soon__btn {
     width: 100px;
     height: 56px;
+  }
+  .coming-soon__error-icon {
+    right: 116px;
   }
 }
 @media (min-width: 1440px) {
